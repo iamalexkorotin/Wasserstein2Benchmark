@@ -57,7 +57,7 @@ We provide all the code to evaluate existing dual OT solvers on our benchmark pa
 - `notebooks/QC_test_hd_benchmark.ipynb` -- testing \[QC\] solver
 - `notebooks/LS_test_hd_benchmark.ipynb` -- testing \[LS\] solver
 
-<p align="center"><img src="pics/hd_benchmark.png" width="750" /></p>
+<p align="center"><img src="pics/hd_benchmark.png" width="650" /></p>
 
 ### Testing Existing Solvers On Images Benchmark Pairs (CelebA 64x64 Aligned Faces)
 - `notebooks/MM_test_images_benchmark.ipynb` -- testing \[MM\] solver and its reversed version
@@ -67,7 +67,7 @@ We provide all the code to evaluate existing dual OT solvers on our benchmark pa
 
 \[LS\], \[MMv2\], \[MMv1\] solvers are not considered in this experiment.
 
-<p align="center"><img src="pics/images_benchmark.png" width="850" /></p>
+<p align="center"><img src="pics/images_benchmark.png" width="750" /></p>
 
 ### Generative Modeling by Using Existing Solvers to Compute Loss
 **Warning:** training may take several days before achieving reasonable FID scores!
@@ -75,6 +75,8 @@ We provide all the code to evaluate existing dual OT solvers on our benchmark pa
 - `notebooks/W2_test_image_generation.ipynb` -- generative modeling by \[W2\] solver
 
 For \[QC\] solver we used the code from the [official WGAN-QC repo](https://github.com/harryliew/WGAN-QC).
+
+<p align="center"><img src="pics/images_generation.png" width="750" /></p>
 
 ## Training Benchmark Pairs From Scratch
 This code is provided for completeness and *is not intended to be used to retrain existing benchmark pairs*, but might be used as the base to train new pairs on new datasets. High-dimensional benchmak pairs can be trained from scratch. Training images benchmark pairs requires generator network checkpoints. We used [WGAN-QC](https://github.com/harryliew/WGAN-QC) model to provide such checkpoints.
