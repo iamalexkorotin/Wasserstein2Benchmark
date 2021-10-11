@@ -47,7 +47,7 @@ Y_true = benchmark.map_fwd(X, nograd=True)
 All the experiments are issued in the form of pretty self-explanatory jupyter notebooks (`notebooks/`). Auxilary source code is moved to `.py` modules (`src/`). Continuous benchmark pairs are stored as `.pt` checkpoints (`benchmarks/`).
 
 ## Evaluation of Existing Solvers
-We provide all the code to evaluate existing dual OT solvers on our benchmark pairs.
+We provide all the code to evaluate existing dual OT solvers on our benchmark pairs. The qualitative results are shown below. For quantitative results, see the paper.
 
 ### Testing Existing Solvers On High-Dimensional Benchmarks
 - `notebooks/MM_test_hd_benchmark.ipynb` -- testing \[MM\], \[MMv2\] solvers and their reversed versions
@@ -57,6 +57,8 @@ We provide all the code to evaluate existing dual OT solvers on our benchmark pa
 - `notebooks/QC_test_hd_benchmark.ipynb` -- testing \[QC\] solver
 - `notebooks/LS_test_hd_benchmark.ipynb` -- testing \[LS\] solver
 
+<p align="center"><img src="pics/hd_benchmark.png" width="750" /></p>
+
 ### Testing Existing Solvers On Images Benchmark Pairs (CelebA 64x64 Aligned Faces)
 - `notebooks/MM_test_images_benchmark.ipynb` -- testing \[MM\] solver and its reversed version
 - `notebooks/W2_test_images_benchmark.ipynb` -- testing \[W2\]
@@ -64,6 +66,8 @@ We provide all the code to evaluate existing dual OT solvers on our benchmark pa
 - `notebooks/QC_test_images_benchmark.ipynb` -- testing \[QC\] solver
 
 \[LS\], \[MMv2\], \[MMv1\] solvers are not considered in this experiment.
+
+<p align="center"><img src="pics/images_benchmark.png" width="850" /></p>
 
 ### Generative Modeling by Using Existing Solvers to Compute Loss
 **Warning:** training may take several days before achieving reasonable FID scores!
