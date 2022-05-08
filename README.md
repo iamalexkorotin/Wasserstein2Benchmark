@@ -7,8 +7,9 @@ The repository contains a set of continuous benchmark measures for testing optim
 ```
 @article{korotin2021neural,
   title={Do Neural Optimal Transport Solvers Work? A Continuous Wasserstein-2 Benchmark},
-  author={Korotin, Alexander and Li, Lingxiao and Genevay, Aude and Solomon, Justin and Filippov, Alexander and Burnaev, Evgeny},
-  journal={arXiv preprint arXiv:2106.01954},
+  author={Korotin, Alexander and Li, Lingxiao and Genevay, Aude and Solomon, Justin M and Filippov, Alexander and Burnaev, Evgeny},
+  journal={Advances in Neural Information Processing Systems},
+  volume={34},
   year={2021}
 }
 ```
